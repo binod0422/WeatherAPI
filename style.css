@@ -1,0 +1,184 @@
+:root {
+  --primary-color: #00AEEF;
+  --secondary-color: #0077B6;
+  --fallback-color: #00AEFF;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.app-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-weight: bold;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--fallback-color);
+}
+
+input.form-control,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  transition: border-color 0.2s;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--fallback-color);
+}
+
+input.form-control:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+input.form-control:-webkit-autofill,
+input.form-control:-webkit-autofill:hover,
+input.form-control:-webkit-autofill:focus,
+input.form-control:-webkit-autofill:active {
+  -webkit-text-fill-color: #00AEFF;
+  transition: background-color 5000s ease-in-out 0s; /* Adjust the transition duration as needed */
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.weather-info {
+  margin-top: 2rem;
+}
+
+.card1 {
+  position: relative;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: #fff;
+  height: 475px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  visibility: hidden;
+}
+
+.card1 h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card1 p {
+  font-size: 1.2rem;
+  color: #f8f9fa;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+#hourlyWeather .col-2 {
+  flex: 0 0 auto;
+  width: 16.66%;
+  padding: 0 5px;
+  transition: 0.5s;
+}
+
+#hourlyWeather {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-top: 1em;
+  border-radius: 1px;
+  visibility: hidden;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+#hourlyWeather::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--primary-color);
+  transition: 0.5s;
+}
+
+#hourlyWeather::-webkit-scrollbar-thumb {
+  background: #f8f9fa;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.card2 {
+  width: calc(33.33% - 5px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.forecastRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card2 .card-img-top {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+}
+
+h3,
+#date {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--fallback-color);
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--fallback-color);
+}
+
+input.form-control:hover {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
